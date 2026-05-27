@@ -1,0 +1,22 @@
+{
+  "WARMUP": 15,
+  "TRAIN_END": 450,
+  "MARGIN": 1.5,
+  "threshold": 1.7148510217666626,
+  "n_features": 14,
+  "log_features": [
+    "band_0_100",
+    "band_200_260",
+    "band_440_500",
+    "band_670_730",
+    "band_900_950",
+    "band_970_1010",
+    "band_HF"
+  ],
+  "clip": 10.0,
+  "first_detection": 543,
+  "anticipation_hours": 73.16666666666667,
+  "false_alarms": 0,
+  "architecture": "14-8-4-3-4-8-14",
+  "total_params": 353
+}

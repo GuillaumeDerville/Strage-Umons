@@ -1,0 +1,153 @@
+Backend: Vivado
+ClockPeriod: 5
+ClockUncertainty: 12.5%
+HLSConfig:
+  LayerName:
+    bottleneck:
+      Precision:
+        bias: fixed<8,3,TRN,WRAP,0>
+        result: auto
+        weight: fixed<8,3,TRN,WRAP,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    bottleneck_act:
+      Precision:
+        result: ufixed<8,2,RND_CONV,SAT,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    bottleneck_linear:
+      Precision:
+        result: auto
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    dec1:
+      Precision:
+        bias: fixed<8,3,TRN,WRAP,0>
+        result: auto
+        weight: fixed<8,3,TRN,WRAP,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    dec1_act:
+      Precision:
+        result: ufixed<8,2,RND_CONV,SAT,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    dec1_linear:
+      Precision:
+        result: auto
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    dec2:
+      Precision:
+        bias: fixed<8,3,TRN,WRAP,0>
+        result: auto
+        weight: fixed<8,3,TRN,WRAP,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    dec2_act:
+      Precision:
+        result: ufixed<8,2,RND_CONV,SAT,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    dec2_linear:
+      Precision:
+        result: auto
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    enc1:
+      Precision:
+        bias: fixed<8,3,TRN,WRAP,0>
+        result: auto
+        weight: fixed<8,3,TRN,WRAP,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    enc1_act:
+      Precision:
+        result: ufixed<8,2,RND_CONV,SAT,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    enc1_linear:
+      Precision:
+        result: auto
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    enc2:
+      Precision:
+        bias: fixed<8,3,TRN,WRAP,0>
+        result: auto
+        weight: fixed<8,3,TRN,WRAP,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    enc2_act:
+      Precision:
+        result: ufixed<8,2,RND_CONV,SAT,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    enc2_linear:
+      Precision:
+        result: auto
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    input_4:
+      Precision:
+        result: auto
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    output:
+      Precision:
+        bias: fixed<8,3,TRN,WRAP,0>
+        result: auto
+        weight: fixed<8,3,TRN,WRAP,0>
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+    output_linear:
+      Precision:
+        result: auto
+      ReuseFactor: 1
+      Strategy: Resource
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Resource
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+InputShapes:
+  input_4:
+  - 14
+KerasModel: !keras_model 'hls4ml_dse_rf1/keras_model.keras'
+OutputDir: hls4ml_dse_rf1
+OutputPredictions: null
+OutputShapes:
+  layer17_out:
+  - 14
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 74bc47dc
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteTar: false
+  WriteWeightsTxt: true

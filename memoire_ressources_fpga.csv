@@ -1,0 +1,16 @@
+Métrique,Valeur
+Cible FPGA,Zynq-7020 (xc7z020clg400-1)
+Précision,"QKeras 8 bits (ap_fixed<16,6>)"
+Reuse factor,4
+Stratégie,Resource
+──────────────────────────────,──────────────────────────────
+Latence (min – max),58 – 64 cycles
+Période d'horloge,5.00 ns (200 MHz)
+Latence (temps réel),0.290 – 0.320 µs
+Intervalle (débit),4 cycles (≈ 50 M inf./s)
+Type pipeline,dataflow
+──────────────────────────────,──────────────────────────────
+DSP utilisés,55 / 220 (25%)
+LUT utilisés,31 943 / 53 200 (60%)
+FF utilisés,22 903 / 106 400 (21%)
+BRAM (18 Kbit),26 / 140 (19%)

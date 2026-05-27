@@ -1,0 +1,84 @@
+AcceleratorConfig:
+  Board: pynq-z2
+  Driver: python
+  Interface: axi_stream
+  Precision:
+    Input: float
+    Output: float
+Backend: VivadoAccelerator
+ClockPeriod: 5
+ClockUncertainty: 12.5%
+HLSConfig:
+  LayerName:
+    dense:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_1:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_1_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense_2:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_2_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense_3:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_3_linear:
+      Precision:
+        result: auto
+      Trace: false
+    dense_relu:
+      Precision:
+        result: auto
+      Trace: false
+    input_1:
+      Precision:
+        result: auto
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: ap_fixed<16,6>
+    ReuseFactor: 8
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+InputShapes:
+  input_1:
+  - 14
+KerasModel: !keras_model 'hls4ml_output/rf8/keras_model.keras'
+OutputDir: hls4ml_output/rf8
+OutputPredictions: null
+OutputShapes:
+  layer8_out:
+  - 14
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 075d2f40
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteTar: false
+  WriteWeightsTxt: true

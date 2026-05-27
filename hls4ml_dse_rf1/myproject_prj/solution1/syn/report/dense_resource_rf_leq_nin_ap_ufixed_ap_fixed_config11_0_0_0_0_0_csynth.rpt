@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vivado HLS Report for 'dense_resource_rf_leq_nin_ap_ufixed_ap_fixed_config11_0_0_0_0_0'
+================================================================
+* Date:           Wed May 20 11:13:18 2026
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 4.170 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1| 5.000 ns | 5.000 ns |    1|    1|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      0|       0|    547|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|     24|    -|
+|Register         |        -|      -|     122|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|     122|    571|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |      1|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |mul_ln1118_6_fu_434_p2   |     *    |      0|  0|  41|           8|           7|
+    |mul_ln1118_fu_240_p2     |     *    |      0|  0|  41|           8|           6|
+    |mul_ln708_7_fu_224_p2    |     *    |      0|  0|  41|           8|           6|
+    |mul_ln708_8_fu_284_p2    |     *    |      0|  0|  41|           8|           5|
+    |mul_ln708_fu_98_p2       |     *    |      0|  0|  41|           8|           5|
+    |acc_1_V_fu_503_p2        |     +    |      0|  0|  21|          15|          15|
+    |acc_2_V_fu_521_p2        |     +    |      0|  0|  21|          15|          15|
+    |acc_3_V_fu_543_p2        |     +    |      0|  0|  23|          16|          16|
+    |add_ln1118_fu_268_p2     |     +    |      0|  0|  17|          13|          13|
+    |add_ln703_60_fu_459_p2   |     +    |      0|  0|  12|          12|           8|
+    |add_ln703_62_fu_483_p2   |     +    |      0|  0|  19|          14|          14|
+    |add_ln703_63_fu_493_p2   |     +    |      0|  0|  19|          14|           8|
+    |add_ln703_65_fu_340_p2   |     +    |      0|  0|  19|          14|          14|
+    |add_ln703_66_fu_512_p2   |     +    |      0|  0|  12|          12|           9|
+    |add_ln703_68_fu_450_p2   |     +    |      0|  0|  21|          15|          15|
+    |add_ln703_69_fu_533_p2   |     +    |      0|  0|  21|          15|           9|
+    |add_ln703_fu_218_p2      |     +    |      0|  0|  19|          14|          14|
+    |p_Val2_s_fu_468_p2       |     +    |      0|  0|  21|          15|          15|
+    |sub_ln1118_27_fu_198_p2  |     -    |      0|  0|  12|          12|          12|
+    |sub_ln1118_28_fu_300_p2  |     -    |      0|  0|  19|           1|          14|
+    |sub_ln1118_29_fu_320_p2  |     -    |      0|  0|  12|          12|          12|
+    |sub_ln1118_30_fu_370_p2  |     -    |      0|  0|  12|          12|          12|
+    |sub_ln1118_31_fu_414_p2  |     -    |      0|  0|  21|          15|          15|
+    |sub_ln1118_fu_142_p2     |     -    |      0|  0|  19|          14|          14|
+    |ap_block_state1          |    or    |      0|  0|   2|           1|           1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |Total                    |          |      0|  0| 547|         291|         274|
+    +-------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  15|          3|    1|          3|
+    |ap_done    |   9|          2|    1|          2|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  24|          5|    2|          5|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------+----+----+-----+-----------+
+    |         Name         | FF | LUT| Bits| Const Bits|
+    +----------------------+----+----+-----+-----------+
+    |add_ln703_65_reg_647  |  14|   0|   14|          0|
+    |add_ln703_68_reg_657  |  15|   0|   15|          0|
+    |add_ln703_reg_622     |  14|   0|   14|          0|
+    |ap_CS_fsm             |   2|   0|    2|          0|
+    |ap_done_reg           |   1|   0|    1|          0|
+    |lshr_ln708_s_reg_627  |  13|   0|   13|          0|
+    |tmp_182_reg_632       |  13|   0|   13|          0|
+    |tmp_183_reg_637       |  12|   0|   12|          0|
+    |tmp_188_reg_652       |  14|   0|   14|          0|
+    |trunc_ln2_reg_642     |  12|   0|   12|          0|
+    |trunc_ln_reg_617      |  12|   0|   12|          0|
+    +----------------------+----+----+-----+-----------+
+    |Total                 | 122|   0|  122|          0|
+    +----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+------------------------------------------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |                           Source Object                          |    C Type    |
++-------------+-----+-----+------------+------------------------------------------------------------------+--------------+
+|ap_clk       |  in |    1| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_rst       |  in |    1| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_start     |  in |    1| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_done      | out |    1| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_continue  |  in |    1| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_idle      | out |    1| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_ready     | out |    1| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_return_0  | out |   17| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_return_1  | out |   17| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_return_2  | out |   17| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|ap_return_3  | out |   17| ap_ctrl_hs | dense_resource_rf_leq_nin<ap_ufixed,ap_fixed,config11>.0.0.0.0.0 | return value |
+|p_read       |  in |    8|   ap_none  |                              p_read                              |    scalar    |
+|p_read1      |  in |    8|   ap_none  |                              p_read1                             |    scalar    |
+|p_read2      |  in |    8|   ap_none  |                              p_read2                             |    scalar    |
++-------------+-----+-----+------------+------------------------------------------------------------------+--------------+
+

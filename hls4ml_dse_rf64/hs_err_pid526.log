@@ -1,0 +1,17 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7fb080442520]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/libtcl8.5.so(+0xb9519) [0x7fb079eb9519]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/libtcl8.5.so(Tcl_ResetResult+0x10) [0x7fb079eb9f20]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/libtcl8.5.so(+0x34429) [0x7fb079e34429]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/libtcl8.5.so(Tcl_EvalEx+0x13) [0x7fb079e350a3]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/libtcl8.5.so(Tcl_Eval+0x15) [0x7fb079e350c5]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/libhls_support.so(+0x75c10) [0x7fb075a75c10]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/libtcl8.5.so(Tcl_Finalize+0x49) [0x7fb079e74199]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/libtcl8.5.so(Tcl_Exit+0x4a) [0x7fb079e7434a]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/libtcl8.5.so(Tcl_Main+0x24e) [0x7fb079ea028e]
+/tools/Xilinx/Vivado/2020.1/lib/lnx64.o/librdi_common.so(+0x9a6e6b) [0x7fb081da6e6b]
+/lib/x86_64-linux-gnu/libc.so.6(+0x94ac3) [0x7fb080494ac3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x1268d0) [0x7fb0805268d0]

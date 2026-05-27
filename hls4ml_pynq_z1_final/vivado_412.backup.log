@@ -1,0 +1,1006 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May 21 11:12:47 2026
+# Process ID: 412
+# Current directory: /home/moi/stage/notebooks/hls4ml_pynq_z1_final
+# Command line: vivado -mode batch -source vivado_synth.tcl
+# Log file: /home/moi/stage/notebooks/hls4ml_pynq_z1_final/vivado.log
+# Journal file: /home/moi/stage/notebooks/hls4ml_pynq_z1_final/vivado.jou
+#-----------------------------------------------------------
+source vivado_synth.tcl
+# set tcldir [file dirname [info script]]
+# source [file join $tcldir project.tcl]
+## variable project_name
+## set project_name "myproject"
+## variable backend
+## set backend "vivadoaccelerator"
+## variable part
+## set part "xc7z020clg400-1"
+## variable clock_period
+## set clock_period 5
+## variable clock_uncertainty
+## set clock_uncertainty 12.5%
+## variable version
+## set version "1.0.0"
+## variable maximum_size
+## set maximum_size 4096
+## set bit_width_hls_output 32
+## set bit_width_hls_input 32
+# add_files ${project_name}_prj/solution1/syn/verilog
+# synth_design -top ${project_name} -part $part
+Command: synth_design -top myproject -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 420
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2077.246 ; gain = 0.000 ; free physical = 637 ; free virtual = 3301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'myproject' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb.v:39]
+	Parameter DataWidth bound to: 2 - type: integer 
+	Parameter AddressRange bound to: 56 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb.v:6]
+	Parameter DWIDTH bound to: 2 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 56 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb_rom' (1#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb' (2#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb.v:39]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud.v:39]
+	Parameter DataWidth bound to: 14 - type: integer 
+	Parameter AddressRange bound to: 56 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud.v:6]
+	Parameter DWIDTH bound to: 14 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 56 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud_rom' (3#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud' (4#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud.v:39]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_lshr_224ns_8ns_224_6_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_lshr_224ns_8ns_224_6_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 224 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 224 - type: integer 
+	Parameter OP bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter K bound to: 2 - type: integer 
+	Parameter LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_lshr_224ns_8ns_224_6_1' (5#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_lshr_224ns_8ns_224_6_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_42_16_1_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_42_16_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 16 - type: integer 
+	Parameter din4_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_42_16_1_1' (6#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_42_16_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_83_16_1_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_83_16_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 16 - type: integer 
+	Parameter din4_WIDTH bound to: 16 - type: integer 
+	Parameter din5_WIDTH bound to: 16 - type: integer 
+	Parameter din6_WIDTH bound to: 16 - type: integer 
+	Parameter din7_WIDTH bound to: 16 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_83_16_1_1' (7#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_83_16_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mul_mul_8s_16s_21_3_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mul_mul_8s_16s_21_3_1.v:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mul_mul_8s_16s_21_3_1_DSP48_0' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mul_mul_8s_16s_21_3_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mul_mul_8s_16s_21_3_1_DSP48_0' (8#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mul_mul_8s_16s_21_3_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mul_mul_8s_16s_21_3_1' (9#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mul_mul_8s_16s_21_3_1.v:29]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mul_mul_16s_6s_21_3_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mul_mul_16s_6s_21_3_1.v:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mul_mul_16s_6s_21_3_1_DSP48_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mul_mul_16s_6s_21_3_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mul_mul_16s_6s_21_3_1_DSP48_1' (10#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mul_mul_16s_6s_21_3_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mul_mul_16s_6s_21_3_1' (11#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mul_mul_16s_6s_21_3_1.v:29]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0.v:1673]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0.v:1675]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0.v:1677]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0.v:1679]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0' (12#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:757]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:759]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:761]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:763]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:765]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:767]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:769]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:771]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:773]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:775]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:777]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:779]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:781]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:783]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:785]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:787]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:789]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:791]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:793]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:795]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:797]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:799]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:801]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:803]
+INFO: [Synth 8-6155] done synthesizing module 'relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s' (13#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4.v:39]
+	Parameter DataWidth bound to: 2 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4.v:6]
+	Parameter DWIDTH bound to: 2 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4_rom' (14#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4' (15#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4.v:39]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V.v:39]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V.v:6]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V_rom' (16#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V' (17#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V.v:39]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_83_8_1_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_83_8_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 8 - type: integer 
+	Parameter din4_WIDTH bound to: 8 - type: integer 
+	Parameter din5_WIDTH bound to: 8 - type: integer 
+	Parameter din6_WIDTH bound to: 8 - type: integer 
+	Parameter din7_WIDTH bound to: 8 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_83_8_1_1' (18#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_83_8_1_1.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0.v:1280]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0' (19#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:449]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:451]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:453]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:455]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:457]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:459]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:461]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:463]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:465]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:467]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:469]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:471]
+INFO: [Synth 8-6155] done synthesizing module 'relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s' (20#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3.v:39]
+	Parameter DataWidth bound to: 2 - type: integer 
+	Parameter AddressRange bound to: 12 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3.v:6]
+	Parameter DWIDTH bound to: 2 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3_rom' (21#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3' (22#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3.v:39]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V.v:39]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 12 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V.v:6]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V_rom' (23#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V' (24#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V.v:39]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_42_8_1_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_42_8_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 8 - type: integer 
+	Parameter din4_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_42_8_1_1' (25#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_42_8_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_32_16_1_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_32_16_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_32_16_1_1' (26#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_32_16_1_1.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0.v:980]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0' (27#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:380]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:382]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:384]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:386]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:388]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:390]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:392]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:394]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:396]
+INFO: [Synth 8-6155] done synthesizing module 'relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s' (28#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2.v:39]
+	Parameter DataWidth bound to: 2 - type: integer 
+	Parameter AddressRange bound to: 12 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2.v:6]
+	Parameter DWIDTH bound to: 2 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2_rom' (29#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2' (30#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2.v:39]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V.v:39]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 12 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V.v:6]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V_rom' (31#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V' (32#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V.v:39]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_32_8_1_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_32_8_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_32_8_1_1' (33#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_32_8_1_1.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0.v:1034]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0' (34#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:449]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:451]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:453]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:455]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:457]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:459]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:461]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:463]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:465]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:467]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:469]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:471]
+INFO: [Synth 8-6155] done synthesizing module 'relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s' (35#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe.v:39]
+	Parameter DataWidth bound to: 3 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe.v:6]
+	Parameter DWIDTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe_rom' (36#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe' (37#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe.v:39]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg.v:39]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg.v:6]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg_rom' (38#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg' (39#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg.v:39]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0.v:1359]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0' (40#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:725]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:727]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:729]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:731]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:733]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:735]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:737]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:739]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:741]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:743]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:745]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:747]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:749]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:751]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:753]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:755]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:757]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:759]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:761]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:763]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:765]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:767]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:769]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:771]
+INFO: [Synth 8-6155] done synthesizing module 'relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s' (41#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx.v:39]
+	Parameter DataWidth bound to: 3 - type: integer 
+	Parameter AddressRange bound to: 56 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx.v:6]
+	Parameter DWIDTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 56 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx_rom' (42#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx' (43#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx.v:39]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V.v:39]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 56 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V_rom' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V.v:6]
+	Parameter DWIDTH bound to: 15 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 56 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V_rom.dat' is read successfully [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V_rom' (44#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V' (45#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V.v:39]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_164_16_1_1' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_164_16_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 16 - type: integer 
+	Parameter din4_WIDTH bound to: 16 - type: integer 
+	Parameter din5_WIDTH bound to: 16 - type: integer 
+	Parameter din6_WIDTH bound to: 16 - type: integer 
+	Parameter din7_WIDTH bound to: 16 - type: integer 
+	Parameter din8_WIDTH bound to: 16 - type: integer 
+	Parameter din9_WIDTH bound to: 16 - type: integer 
+	Parameter din10_WIDTH bound to: 16 - type: integer 
+	Parameter din11_WIDTH bound to: 16 - type: integer 
+	Parameter din12_WIDTH bound to: 16 - type: integer 
+	Parameter din13_WIDTH bound to: 16 - type: integer 
+	Parameter din14_WIDTH bound to: 16 - type: integer 
+	Parameter din15_WIDTH bound to: 16 - type: integer 
+	Parameter din16_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_164_16_1_1' (46#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject_axi_mux_164_16_1_1.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.v:1771]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' (47#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w21_d2_A' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w21_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 21 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w21_d2_A_shiftReg' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w21_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 21 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w21_d2_A_shiftReg' (48#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w21_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w21_d2_A' (49#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w21_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w8_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w8_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (50#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w8_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (51#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w8_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w17_d2_A' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w17_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 17 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w17_d2_A_shiftReg' [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w17_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 17 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w17_d2_A_shiftReg' (52#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w17_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w17_d2_A' (53#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/fifo_w17_d2_A.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'myproject' (54#1) [/home/moi/stage/notebooks/hls4ml_pynq_z1_final/myproject_prj/solution1/syn/verilog/myproject.v:10]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 2077.246 ; gain = 0.000 ; free physical = 640 ; free virtual = 3307
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 2077.246 ; gain = 0.000 ; free physical = 648 ; free virtual = 3315
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 648 ; free virtual = 3315
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 503 ; free virtual = 3195
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   2 Input   16 Bit       Adders := 8     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 28    
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 54    
++---XORs : 
+	   2 Input      1 Bit         XORs := 135   
++---Registers : 
+	              224 Bit    Registers := 9     
+	               32 Bit    Registers := 12    
+	               21 Bit    Registers := 26    
+	               17 Bit    Registers := 57    
+	               16 Bit    Registers := 118   
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 198   
+	                7 Bit    Registers := 14    
+	                6 Bit    Registers := 14    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 79    
+	                1 Bit    Registers := 319   
++---ROMs : 
+	                    ROMs := 6     
++---Muxes : 
+	   2 Input  224 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 18    
+	   2 Input   21 Bit        Muxes := 16    
+	   2 Input   17 Bit        Muxes := 38    
+	   2 Input   16 Bit        Muxes := 244   
+	   2 Input    8 Bit        Muxes := 322   
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   6 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 382   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_ln1118_reg_970_reg, operation Mode is: (A''*B'')'.
+DSP Report: register trunc_ln145_2_reg_944_reg is absorbed into DSP mul_ln1118_reg_970_reg.
+DSP Report: register myproject_axi_mul_mul_8s_16s_21_3_1_U4/myproject_axi_mul_mul_8s_16s_21_3_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_reg_970_reg.
+DSP Report: register trunc_ln145_1_reg_939_reg is absorbed into DSP mul_ln1118_reg_970_reg.
+DSP Report: register myproject_axi_mul_mul_8s_16s_21_3_1_U4/myproject_axi_mul_mul_8s_16s_21_3_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_reg_970_reg.
+DSP Report: register mul_ln1118_reg_970_reg is absorbed into DSP mul_ln1118_reg_970_reg.
+DSP Report: register myproject_axi_mul_mul_8s_16s_21_3_1_U4/myproject_axi_mul_mul_8s_16s_21_3_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_reg_970_reg.
+DSP Report: operator myproject_axi_mul_mul_8s_16s_21_3_1_U4/myproject_axi_mul_mul_8s_16s_21_3_1_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_reg_970_reg.
+DSP Report: Generating DSP mul_ln1118_1_reg_975_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_40_i_reg_949_reg is absorbed into DSP mul_ln1118_1_reg_975_reg.
+DSP Report: register myproject_axi_mul_mul_16s_6s_21_3_1_U5/myproject_axi_mul_mul_16s_6s_21_3_1_DSP48_1_U/b_reg_reg is absorbed into DSP mul_ln1118_1_reg_975_reg.
+DSP Report: register trunc_ln145_1_reg_939_reg is absorbed into DSP mul_ln1118_1_reg_975_reg.
+DSP Report: register myproject_axi_mul_mul_8s_16s_21_3_1_U4/myproject_axi_mul_mul_8s_16s_21_3_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_1_reg_975_reg.
+DSP Report: register mul_ln1118_1_reg_975_reg is absorbed into DSP mul_ln1118_1_reg_975_reg.
+DSP Report: register myproject_axi_mul_mul_16s_6s_21_3_1_U5/myproject_axi_mul_mul_16s_6s_21_3_1_DSP48_1_U/p_reg_reg is absorbed into DSP mul_ln1118_1_reg_975_reg.
+DSP Report: operator myproject_axi_mul_mul_16s_6s_21_3_1_U5/myproject_axi_mul_mul_16s_6s_21_3_1_DSP48_1_U/p_reg0 is absorbed into DSP mul_ln1118_1_reg_975_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:26 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 317 ; free virtual = 3029
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-------------------------------------------------------------------------------------+------------+---------------+----------------+
+|Module Name                                                                          | RTL Object | Depth x Width | Implemented As | 
++-------------------------------------------------------------------------------------+------------+---------------+----------------+
+|dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb_rom | p_0_out    | 64x2          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4_rom       | p_0_out    | 32x2          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3_rom         | p_0_out    | 16x2          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2_rom      | p_0_out    | 16x2          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe_rom | p_0_out    | 32x3          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx_rom               | p_0_out    | 64x3          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0          | p_0_out    | 64x2          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0                   | p_0_out    | 32x2          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0                     | p_0_out    | 16x2          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0                  | p_0_out    | 16x2          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0          | p_0_out    | 32x3          | LUT            | 
+|dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0                          | p_0_out    | 64x3          | LUT            | 
++-------------------------------------------------------------------------------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping	Report (see note below)
++----------------------------------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                                 | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0 | (A''*B'')'  | 16     | 8      | -      | -      | 24     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0 | (A''*B'')'  | 16     | 6      | -      | -      | 22     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++----------------------------------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 317 ; free virtual = 3030
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_U0/w2_V_U/dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:33 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 312 ; free virtual = 3025
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 313 ; free virtual = 3025
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 313 ; free virtual = 3025
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:38 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 313 ; free virtual = 3025
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:38 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 313 ; free virtual = 3025
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:39 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 313 ; free virtual = 3025
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:39 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 313 ; free virtual = 3025
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|myproject   | dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_U0/icmp_ln135_reg_889_pp0_iter12_reg_reg[0] | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|myproject   | dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_U0/w_index26_i_reg_166_pp0_iter6_reg_reg[5] | 5      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|myproject   | dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_U0/out_index_reg_933_pp0_iter11_reg_reg[1]  | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
++------------+-------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   253|
+|3     |DSP48E1  |     2|
+|4     |LUT1     |    33|
+|5     |LUT2     |   946|
+|6     |LUT3     |    95|
+|7     |LUT4     |  1628|
+|8     |LUT5     |   651|
+|9     |LUT6     |  3461|
+|10    |MUXF7    |    56|
+|11    |MUXF8    |     2|
+|12    |RAMB18E1 |     6|
+|13    |SRL16E   |     9|
+|14    |FDRE     |  6647|
+|15    |FDSE     |   358|
+|16    |IBUF     |   228|
+|17    |OBUF     |   255|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------+
+|      |Instance                                                                                     |Module                                                                               |Cells |
++------+---------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------+
+|1     |top                                                                                          |                                                                                     | 14631|
+|2     |  layer4_out_0_V_U                                                                           |fifo_w8_d2_A_32                                                                      |    33|
+|3     |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_67                                                             |    24|
+|4     |  layer4_out_2_V_U                                                                           |fifo_w8_d2_A_34                                                                      |    33|
+|5     |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_65                                                             |    24|
+|6     |  layer4_out_3_V_U                                                                           |fifo_w8_d2_A_35                                                                      |    33|
+|7     |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_64                                                             |    24|
+|8     |  layer4_out_5_V_U                                                                           |fifo_w8_d2_A_37                                                                      |    33|
+|9     |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_62                                                             |    24|
+|10    |  layer4_out_6_V_U                                                                           |fifo_w8_d2_A_38                                                                      |    33|
+|11    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_61                                                             |    24|
+|12    |  layer7_out_0_V_U                                                                           |fifo_w8_d2_A_44                                                                      |    33|
+|13    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_55                                                             |    24|
+|14    |  layer7_out_2_V_U                                                                           |fifo_w8_d2_A_46                                                                      |    33|
+|15    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_53                                                             |    24|
+|16    |  layer7_out_3_V_U                                                                           |fifo_w8_d2_A_47                                                                      |    33|
+|17    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg                                                                |    24|
+|18    |  layer10_out_1_V_U                                                                          |fifo_w8_d2_A_0                                                                       |    33|
+|19    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_100                                                            |    24|
+|20    |  layer13_out_0_V_U                                                                          |fifo_w8_d2_A_5                                                                       |    33|
+|21    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_94                                                             |    24|
+|22    |  layer13_out_2_V_U                                                                          |fifo_w8_d2_A_7                                                                       |    33|
+|23    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_92                                                             |    24|
+|24    |  layer13_out_3_V_U                                                                          |fifo_w8_d2_A_8                                                                       |    33|
+|25    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_91                                                             |    24|
+|26    |  layer16_out_0_V_U                                                                          |fifo_w8_d2_A_17                                                                      |    33|
+|27    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_82                                                             |    24|
+|28    |  layer16_out_2_V_U                                                                          |fifo_w8_d2_A_19                                                                      |    33|
+|29    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_80                                                             |    24|
+|30    |  layer16_out_3_V_U                                                                          |fifo_w8_d2_A_20                                                                      |    33|
+|31    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_79                                                             |    24|
+|32    |  layer16_out_6_V_U                                                                          |fifo_w8_d2_A_23                                                                      |    33|
+|33    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_76                                                             |    24|
+|34    |  layer16_out_7_V_U                                                                          |fifo_w8_d2_A_24                                                                      |    33|
+|35    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_75                                                             |    24|
+|36    |  dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_U0                             |dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0                          |  2063|
+|37    |    outidx_U                                                                                 |dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx                   |    10|
+|38    |      dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx_rom_U               |dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_outidx_rom               |    10|
+|39    |    w17_V_U                                                                                  |dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V                    |   162|
+|40    |      dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V_rom_U                |dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_w17_V_rom                |   162|
+|41    |  dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_U0             |dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0          |  3084|
+|42    |    myproject_axi_lshr_224ns_8ns_224_6_1_U1                                                  |myproject_axi_lshr_224ns_8ns_224_6_1                                                 |   635|
+|43    |    myproject_axi_mux_42_16_1_1_U2                                                           |myproject_axi_mux_42_16_1_1                                                          |    16|
+|44    |    myproject_axi_mux_83_16_1_1_U3                                                           |myproject_axi_mux_83_16_1_1                                                          |    21|
+|45    |    outidx5_U                                                                                |dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb     |     6|
+|46    |      dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb_rom_U |dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_obkb_rom |     6|
+|47    |    w2_V_U                                                                                   |dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud     |     2|
+|48    |      dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud_rom_U |dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_wcud_rom |     2|
+|49    |  dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_U0                     |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0                  |   967|
+|50    |    outidx2_U                                                                                |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2          |     9|
+|51    |      dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2_rom_U      |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_outidx2_rom      |     9|
+|52    |    w11_V_U                                                                                  |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V            |    43|
+|53    |      dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V_rom_U        |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_w11_V_rom        |    43|
+|54    |  dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_U0             |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0          |  1235|
+|55    |    outidx1_U                                                                                |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe     |     7|
+|56    |      dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe_rom_U |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_odEe_rom |     7|
+|57    |    w14_V_U                                                                                  |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg     |    45|
+|58    |      dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg_rom_U |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_weOg_rom |    45|
+|59    |  dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_U0                      |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0                   |  1133|
+|60    |    outidx4_U                                                                                |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4           |     5|
+|61    |      dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4_rom_U       |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_outidx4_rom       |     5|
+|62    |    w5_V_U                                                                                   |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V              |    19|
+|63    |      dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V_rom_U          |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_w5_V_rom          |    19|
+|64    |  dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_U0                        |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0                     |   903|
+|65    |    outidx3_U                                                                                |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3             |     6|
+|66    |      dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3_rom_U         |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_outidx3_rom         |     6|
+|67    |    w8_V_U                                                                                   |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V                |    46|
+|68    |      dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V_rom_U            |dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_w8_V_rom            |    46|
+|69    |  layer10_out_0_V_U                                                                          |fifo_w8_d2_A                                                                         |    34|
+|70    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_101                                                            |    24|
+|71    |  layer10_out_2_V_U                                                                          |fifo_w8_d2_A_1                                                                       |    36|
+|72    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_99                                                             |    24|
+|73    |  layer11_out_0_V_U                                                                          |fifo_w17_d2_A                                                                        |    76|
+|74    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_98                                                            |    65|
+|75    |  layer11_out_1_V_U                                                                          |fifo_w17_d2_A_2                                                                      |    77|
+|76    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_97                                                            |    65|
+|77    |  layer11_out_2_V_U                                                                          |fifo_w17_d2_A_3                                                                      |    77|
+|78    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_96                                                            |    65|
+|79    |  layer11_out_3_V_U                                                                          |fifo_w17_d2_A_4                                                                      |    77|
+|80    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_95                                                            |    65|
+|81    |  layer13_out_1_V_U                                                                          |fifo_w8_d2_A_6                                                                       |    34|
+|82    |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_93                                                             |    24|
+|83    |  layer14_out_0_V_U                                                                          |fifo_w17_d2_A_9                                                                      |    75|
+|84    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_90                                                            |    65|
+|85    |  layer14_out_1_V_U                                                                          |fifo_w17_d2_A_10                                                                     |    77|
+|86    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_89                                                            |    65|
+|87    |  layer14_out_2_V_U                                                                          |fifo_w17_d2_A_11                                                                     |    75|
+|88    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_88                                                            |    65|
+|89    |  layer14_out_3_V_U                                                                          |fifo_w17_d2_A_12                                                                     |    75|
+|90    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_87                                                            |    65|
+|91    |  layer14_out_4_V_U                                                                          |fifo_w17_d2_A_13                                                                     |    76|
+|92    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_86                                                            |    65|
+|93    |  layer14_out_5_V_U                                                                          |fifo_w17_d2_A_14                                                                     |    75|
+|94    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_85                                                            |    65|
+|95    |  layer14_out_6_V_U                                                                          |fifo_w17_d2_A_15                                                                     |    75|
+|96    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_84                                                            |    65|
+|97    |  layer14_out_7_V_U                                                                          |fifo_w17_d2_A_16                                                                     |    77|
+|98    |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_83                                                            |    65|
+|99    |  layer16_out_1_V_U                                                                          |fifo_w8_d2_A_18                                                                      |    34|
+|100   |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_81                                                             |    24|
+|101   |  layer16_out_4_V_U                                                                          |fifo_w8_d2_A_21                                                                      |    34|
+|102   |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_78                                                             |    24|
+|103   |  layer16_out_5_V_U                                                                          |fifo_w8_d2_A_22                                                                      |    34|
+|104   |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_77                                                             |    24|
+|105   |  layer2_out_0_V_U                                                                           |fifo_w21_d2_A                                                                        |    75|
+|106   |    U_fifo_w21_d2_A_ram                                                                      |fifo_w21_d2_A_shiftReg_74                                                            |    65|
+|107   |  layer2_out_1_V_U                                                                           |fifo_w21_d2_A_25                                                                     |    77|
+|108   |    U_fifo_w21_d2_A_ram                                                                      |fifo_w21_d2_A_shiftReg_73                                                            |    65|
+|109   |  layer2_out_2_V_U                                                                           |fifo_w21_d2_A_26                                                                     |    75|
+|110   |    U_fifo_w21_d2_A_ram                                                                      |fifo_w21_d2_A_shiftReg_72                                                            |    65|
+|111   |  layer2_out_3_V_U                                                                           |fifo_w21_d2_A_27                                                                     |    76|
+|112   |    U_fifo_w21_d2_A_ram                                                                      |fifo_w21_d2_A_shiftReg_71                                                            |    65|
+|113   |  layer2_out_4_V_U                                                                           |fifo_w21_d2_A_28                                                                     |    76|
+|114   |    U_fifo_w21_d2_A_ram                                                                      |fifo_w21_d2_A_shiftReg_70                                                            |    65|
+|115   |  layer2_out_5_V_U                                                                           |fifo_w21_d2_A_29                                                                     |    75|
+|116   |    U_fifo_w21_d2_A_ram                                                                      |fifo_w21_d2_A_shiftReg_69                                                            |    65|
+|117   |  layer2_out_6_V_U                                                                           |fifo_w21_d2_A_30                                                                     |    75|
+|118   |    U_fifo_w21_d2_A_ram                                                                      |fifo_w21_d2_A_shiftReg_68                                                            |    65|
+|119   |  layer2_out_7_V_U                                                                           |fifo_w21_d2_A_31                                                                     |    75|
+|120   |    U_fifo_w21_d2_A_ram                                                                      |fifo_w21_d2_A_shiftReg                                                               |    65|
+|121   |  layer4_out_1_V_U                                                                           |fifo_w8_d2_A_33                                                                      |    36|
+|122   |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_66                                                             |    24|
+|123   |  layer4_out_4_V_U                                                                           |fifo_w8_d2_A_36                                                                      |    34|
+|124   |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_63                                                             |    24|
+|125   |  layer4_out_7_V_U                                                                           |fifo_w8_d2_A_39                                                                      |    34|
+|126   |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_60                                                             |    24|
+|127   |  layer5_out_0_V_U                                                                           |fifo_w17_d2_A_40                                                                     |    76|
+|128   |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_59                                                            |    65|
+|129   |  layer5_out_1_V_U                                                                           |fifo_w17_d2_A_41                                                                     |    77|
+|130   |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_58                                                            |    65|
+|131   |  layer5_out_2_V_U                                                                           |fifo_w17_d2_A_42                                                                     |    77|
+|132   |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_57                                                            |    65|
+|133   |  layer5_out_3_V_U                                                                           |fifo_w17_d2_A_43                                                                     |    76|
+|134   |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_56                                                            |    65|
+|135   |  layer7_out_1_V_U                                                                           |fifo_w8_d2_A_45                                                                      |    35|
+|136   |    U_fifo_w8_d2_A_ram                                                                       |fifo_w8_d2_A_shiftReg_54                                                             |    24|
+|137   |  layer8_out_0_V_U                                                                           |fifo_w17_d2_A_48                                                                     |    76|
+|138   |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_52                                                            |    65|
+|139   |  layer8_out_1_V_U                                                                           |fifo_w17_d2_A_49                                                                     |    77|
+|140   |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg_51                                                            |    65|
+|141   |  layer8_out_2_V_U                                                                           |fifo_w17_d2_A_50                                                                     |    76|
+|142   |    U_fifo_w17_d2_A_ram                                                                      |fifo_w17_d2_A_shiftReg                                                               |    65|
+|143   |  relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_U0                              |relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s                         |   198|
+|144   |  relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_U0                              |relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s                         |   261|
+|145   |  relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_U0                              |relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s                         |   516|
+|146   |  relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_U0                               |relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s                          |   261|
+|147   |  relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_U0                              |relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s                         |   515|
++------+---------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:39 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 313 ; free virtual = 3025
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 90 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:01:39 . Memory (MB): peak = 2083.273 ; gain = 6.027 ; free physical = 325 ; free virtual = 3037
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:39 . Memory (MB): peak = 2083.281 ; gain = 6.027 ; free physical = 325 ; free virtual = 3037
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2083.281 ; gain = 0.000 ; free physical = 393 ; free virtual = 3106
+INFO: [Netlist 29-17] Analyzing 319 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.285 ; gain = 0.000 ; free physical = 313 ; free virtual = 3038
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:47 . Memory (MB): peak = 2107.285 ; gain = 30.039 ; free physical = 451 ; free virtual = 3177
+# opt_design -retarget -propconst -sweep -bram_power_opt -shift_register_opt
+Command: opt_design -retarget -propconst -sweep -bram_power_opt -shift_register_opt
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2139.301 ; gain = 32.016 ; free physical = 447 ; free virtual = 3173
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 6b27f85d
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2381.270 ; gain = 241.969 ; free physical = 64 ; free virtual = 2812
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 6b27f85d
+
+Time (s): cpu = 00:00:00.94 ; elapsed = 00:00:00.79 . Memory (MB): peak = 2520.207 ; gain = 0.000 ; free physical = 89 ; free virtual = 2686
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 80798fd7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.96 . Memory (MB): peak = 2520.207 ; gain = 0.000 ; free physical = 89 ; free virtual = 2686
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 12b96be37
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2520.207 ; gain = 0.000 ; free physical = 87 ; free virtual = 2684
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 4 Shift Register Optimization | Checksum: df58dd88
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2520.207 ; gain = 0.000 ; free physical = 87 ; free virtual = 2684
+INFO: [Opt 31-389] Phase Shift Register Optimization created 1 cells and removed 0 cells
+
+Phase 5 Post Processing Netlist
+Phase 5 Post Processing Netlist | Checksum: df58dd88
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2520.207 ; gain = 0.000 ; free physical = 87 ; free virtual = 2684
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               1  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1263e46ef
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2520.207 ; gain = 0.000 ; free physical = 87 ; free virtual = 2684
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 1 newly gated: 0 Total Ports: 12
+Number of Flops added for Enable Generation: 2
+
+Ending PowerOpt Patch Enables Task | Checksum: 1929af1bd
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2741.887 ; gain = 0.000 ; free physical = 131 ; free virtual = 2639
+Ending Power Optimization Task | Checksum: 1929af1bd
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2741.887 ; gain = 221.680 ; free physical = 145 ; free virtual = 2653
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1b86b0d39
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2741.887 ; gain = 0.000 ; free physical = 143 ; free virtual = 2652
+Ending Final Cleanup Task | Checksum: 1b86b0d39
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2741.887 ; gain = 0.000 ; free physical = 143 ; free virtual = 2652
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2741.887 ; gain = 0.000 ; free physical = 143 ; free virtual = 2652
+Ending Netlist Obfuscation Task | Checksum: 1b86b0d39
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2741.887 ; gain = 0.000 ; free physical = 143 ; free virtual = 2652
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:26 . Memory (MB): peak = 2741.887 ; gain = 634.602 ; free physical = 143 ; free virtual = 2652
+# report_utilization -file vivado_synth.rpt
+INFO: [Common 17-206] Exiting Vivado at Thu May 21 11:16:13 2026...

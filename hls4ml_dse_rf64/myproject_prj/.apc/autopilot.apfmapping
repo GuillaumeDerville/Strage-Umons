@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject.cpp" path="/home/moi/stage/notebooks/hls4ml_dse_rf64/firmware/myproject.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_data" path="/home/moi/stage/notebooks/hls4ml_dse_rf64/tb_data"/>
+    <originFiles name="weights" path="/home/moi/stage/notebooks/hls4ml_dse_rf64/firmware/weights"/>
+    <originFiles name="myproject_test.cpp" path="/home/moi/stage/notebooks/hls4ml_dse_rf64/myproject_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
