@@ -10,7 +10,7 @@
 
 // Prototype of top level function for C-synthesis
 void myproject(
-    input_t input_1[14],
+    input_t input_2[14],
     result_t layer8_out[14]
 );
 

@@ -1,0 +1,450 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'myproject'" level="0">
+<item name = "Date">Mon Jun  1 10:29:08 2026
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 6.325 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">241, 247, 1.524 us, 1.562 us, 56, 56, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0, 68, 69, 0.430 us, 0.436 us, 56, 56, loop rewind(delay=0 initiation interval(s))</column>
+<column name="dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0, 59, 60, 0.373 us, 0.380 us, 56, 56, loop rewind(delay=0 initiation interval(s))</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0, 34, 35, 0.215 us, 0.221 us, 32, 32, loop rewind(delay=0 initiation interval(s))</column>
+<column name="relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_U0">relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s, 1, 1, 6.325 ns, 6.325 ns, 1, 1, function</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0, 35, 36, 0.221 us, 0.228 us, 32, 32, loop rewind(delay=0 initiation interval(s))</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_U0">relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s, 1, 1, 6.325 ns, 6.325 ns, 1, 1, function</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0, 15, 16, 94.875 ns, 0.101 us, 12, 12, loop rewind(delay=0 initiation interval(s))</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0, 15, 16, 94.875 ns, 0.101 us, 12, 12, loop rewind(delay=0 initiation interval(s))</column>
+<column name="relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_U0">relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s, 1, 1, 6.325 ns, 6.325 ns, 1, 1, function</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_U0">relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s, 1, 1, 6.325 ns, 6.325 ns, 1, 1, function</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_U0">relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s, 1, 1, 6.325 ns, 6.325 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 258, -</column>
+<column name="FIFO">0, -, 270, 1355, -</column>
+<column name="Instance">6, 2, 8501, 11747, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 486, -</column>
+<column name="Register">-, -, 54, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, ~0, 8, 26, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0, 1, 0, 816, 1559, 0</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0, 1, 2, 4363, 3683, 0</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0, 1, 0, 523, 881, 0</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0, 1, 0, 665, 1058, 0</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0, 1, 0, 645, 1065, 0</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_U0">dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0, 1, 0, 497, 845, 0</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_U0">relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_s, 0, 0, 108, 300, 0</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_U0">relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_s, 0, 0, 143, 395, 0</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_U0">relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_s, 0, 0, 283, 775, 0</column>
+<column name="relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_U0">relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_s, 0, 0, 143, 395, 0</column>
+<column name="relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_U0">relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_s, 0, 0, 315, 791, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="layer10_out_0_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer10_out_1_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer10_out_2_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer11_out_0_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer11_out_1_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer11_out_2_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer11_out_3_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer13_out_0_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer13_out_1_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer13_out_2_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer13_out_3_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer14_out_0_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer14_out_1_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer14_out_2_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer14_out_3_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer14_out_4_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer14_out_5_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer14_out_6_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer14_out_7_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer16_out_0_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer16_out_1_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer16_out_2_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer16_out_3_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer16_out_4_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer16_out_5_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer16_out_6_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer16_out_7_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer2_out_0_V_U">0, 5, 0, -, 2, 21, 42</column>
+<column name="layer2_out_1_V_U">0, 5, 0, -, 2, 21, 42</column>
+<column name="layer2_out_2_V_U">0, 5, 0, -, 2, 21, 42</column>
+<column name="layer2_out_3_V_U">0, 5, 0, -, 2, 21, 42</column>
+<column name="layer2_out_4_V_U">0, 5, 0, -, 2, 21, 42</column>
+<column name="layer2_out_5_V_U">0, 5, 0, -, 2, 21, 42</column>
+<column name="layer2_out_6_V_U">0, 5, 0, -, 2, 21, 42</column>
+<column name="layer2_out_7_V_U">0, 5, 0, -, 2, 21, 42</column>
+<column name="layer4_out_0_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer4_out_1_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer4_out_2_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer4_out_3_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer4_out_4_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer4_out_5_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer4_out_6_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer4_out_7_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer5_out_0_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer5_out_1_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer5_out_2_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer5_out_3_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer7_out_0_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer7_out_1_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer7_out_2_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer7_out_3_V_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="layer8_out_0_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer8_out_1_V_U">0, 5, 0, -, 2, 17, 34</column>
+<column name="layer8_out_2_V_U">0, 5, 0, -, 2, 17, 34</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_channel_done_layer10_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer10_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer10_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer11_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer11_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer11_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer11_out_3_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer13_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer13_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer13_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer13_out_3_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer14_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer14_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer14_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer14_out_3_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer14_out_4_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer14_out_5_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer14_out_6_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer14_out_7_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer16_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer16_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer16_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer16_out_3_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer16_out_4_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer16_out_5_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer16_out_6_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer16_out_7_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_out_3_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_out_4_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_out_5_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_out_6_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_out_7_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer4_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer4_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer4_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer4_out_3_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer4_out_4_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer4_out_5_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer4_out_6_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer4_out_7_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer5_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer5_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer5_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer5_out_3_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer7_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer7_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer7_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer7_out_3_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer8_out_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer8_out_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer8_out_2_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_fixed_ap_fixed_config2_1_0_0_0_0_0_0_0_0_0_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config11_0_0_0_0_0_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config14_0_0_0_0_0_0_0_0_0_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config5_0_0_0_0_0_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="dense_resource_rf_gt_nin_rem0_ap_ufixed_ap_fixed_config8_0_0_0_0_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config10_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config13_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_19_8_5_3_0_ap_ufixed_8_2_4_0_0_relu_config16_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_20_9_5_3_0_ap_ufixed_8_2_4_0_0_relu_config7_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="relu_ap_fixed_29_14_5_3_0_ap_ufixed_8_2_4_0_0_relu_config4_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer10_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer10_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer10_out_2_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer11_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer11_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer11_out_2_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer11_out_3_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer13_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer13_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer13_out_2_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer13_out_3_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer14_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer14_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer14_out_2_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer14_out_3_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer14_out_4_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer14_out_5_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer14_out_6_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer14_out_7_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer16_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer16_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer16_out_2_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer16_out_3_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer16_out_4_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer16_out_5_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer16_out_6_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer16_out_7_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_out_2_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_out_3_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_out_4_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_out_5_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_out_6_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_out_7_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer4_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer4_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer4_out_2_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer4_out_3_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer4_out_4_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer4_out_5_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer4_out_6_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer4_out_7_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer5_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer5_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer5_out_2_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer5_out_3_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer7_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer7_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer7_out_2_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer7_out_3_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer8_out_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer8_out_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer8_out_2_V">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_channel_write_layer10_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer10_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer10_out_2_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer11_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer11_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer11_out_2_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer11_out_3_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer13_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer13_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer13_out_2_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer13_out_3_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer14_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer14_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer14_out_2_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer14_out_3_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer14_out_4_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer14_out_5_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer14_out_6_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer14_out_7_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer16_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer16_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer16_out_2_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer16_out_3_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer16_out_4_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer16_out_5_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer16_out_6_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer16_out_7_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_out_2_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_out_3_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_out_4_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_out_5_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_out_6_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_out_7_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer4_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer4_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer4_out_2_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer4_out_3_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer4_out_4_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer4_out_5_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer4_out_6_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer4_out_7_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer5_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer5_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer5_out_2_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer5_out_3_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer7_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer7_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer7_out_2_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer7_out_3_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer8_out_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer8_out_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer8_out_2_V">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_channel_write_layer10_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer10_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer10_out_2_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer11_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer11_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer11_out_2_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer11_out_3_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer13_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer13_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer13_out_2_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer13_out_3_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer14_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer14_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer14_out_2_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer14_out_3_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer14_out_4_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer14_out_5_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer14_out_6_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer14_out_7_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer16_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer16_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer16_out_2_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer16_out_3_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer16_out_4_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer16_out_5_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer16_out_6_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer16_out_7_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_out_2_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_out_3_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_out_4_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_out_5_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_out_6_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_out_7_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer4_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer4_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer4_out_2_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer4_out_3_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer4_out_4_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer4_out_5_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer4_out_6_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer4_out_7_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer5_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer5_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer5_out_2_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer5_out_3_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer7_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer7_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer7_out_2_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer7_out_3_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer8_out_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer8_out_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer8_out_2_V">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="input_4_V">in, 224, ap_vld, input_4_V, pointer</column>
+<column name="input_4_V_ap_vld">in, 1, ap_vld, input_4_V, pointer</column>
+<column name="layer17_out_0_V">out, 17, ap_vld, layer17_out_0_V, pointer</column>
+<column name="layer17_out_0_V_ap_vld">out, 1, ap_vld, layer17_out_0_V, pointer</column>
+<column name="layer17_out_1_V">out, 17, ap_vld, layer17_out_1_V, pointer</column>
+<column name="layer17_out_1_V_ap_vld">out, 1, ap_vld, layer17_out_1_V, pointer</column>
+<column name="layer17_out_2_V">out, 17, ap_vld, layer17_out_2_V, pointer</column>
+<column name="layer17_out_2_V_ap_vld">out, 1, ap_vld, layer17_out_2_V, pointer</column>
+<column name="layer17_out_3_V">out, 17, ap_vld, layer17_out_3_V, pointer</column>
+<column name="layer17_out_3_V_ap_vld">out, 1, ap_vld, layer17_out_3_V, pointer</column>
+<column name="layer17_out_4_V">out, 17, ap_vld, layer17_out_4_V, pointer</column>
+<column name="layer17_out_4_V_ap_vld">out, 1, ap_vld, layer17_out_4_V, pointer</column>
+<column name="layer17_out_5_V">out, 17, ap_vld, layer17_out_5_V, pointer</column>
+<column name="layer17_out_5_V_ap_vld">out, 1, ap_vld, layer17_out_5_V, pointer</column>
+<column name="layer17_out_6_V">out, 17, ap_vld, layer17_out_6_V, pointer</column>
+<column name="layer17_out_6_V_ap_vld">out, 1, ap_vld, layer17_out_6_V, pointer</column>
+<column name="layer17_out_7_V">out, 17, ap_vld, layer17_out_7_V, pointer</column>
+<column name="layer17_out_7_V_ap_vld">out, 1, ap_vld, layer17_out_7_V, pointer</column>
+<column name="layer17_out_8_V">out, 17, ap_vld, layer17_out_8_V, pointer</column>
+<column name="layer17_out_8_V_ap_vld">out, 1, ap_vld, layer17_out_8_V, pointer</column>
+<column name="layer17_out_9_V">out, 17, ap_vld, layer17_out_9_V, pointer</column>
+<column name="layer17_out_9_V_ap_vld">out, 1, ap_vld, layer17_out_9_V, pointer</column>
+<column name="layer17_out_10_V">out, 17, ap_vld, layer17_out_10_V, pointer</column>
+<column name="layer17_out_10_V_ap_vld">out, 1, ap_vld, layer17_out_10_V, pointer</column>
+<column name="layer17_out_11_V">out, 17, ap_vld, layer17_out_11_V, pointer</column>
+<column name="layer17_out_11_V_ap_vld">out, 1, ap_vld, layer17_out_11_V, pointer</column>
+<column name="layer17_out_12_V">out, 17, ap_vld, layer17_out_12_V, pointer</column>
+<column name="layer17_out_12_V_ap_vld">out, 1, ap_vld, layer17_out_12_V, pointer</column>
+<column name="layer17_out_13_V">out, 17, ap_vld, layer17_out_13_V, pointer</column>
+<column name="layer17_out_13_V_ap_vld">out, 1, ap_vld, layer17_out_13_V, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, myproject, return value</column>
+</table>
+</item>
+</section>
+</profile>

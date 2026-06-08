@@ -16,27 +16,27 @@
 // hls-fpga-machine-learning insert layer-precision
 typedef ap_fixed<16,6> input_t;
 typedef ap_fixed<16,6> model_default_t;
-typedef ap_fixed<37,17> dense_result_t;
-typedef ap_fixed<16,6> dense_weight_t;
-typedef ap_fixed<16,6> dense_bias_t;
+typedef ap_fixed<37,17> dense_4_result_t;
+typedef ap_fixed<16,6> dense_4_weight_t;
+typedef ap_fixed<16,6> dense_4_bias_t;
 typedef ap_uint<1> layer2_index;
 typedef ap_fixed<16,6> layer3_t;
-typedef ap_fixed<18,8> dense_relu_table_t;
-typedef ap_fixed<36,16> dense_1_result_t;
-typedef ap_fixed<16,6> dense_1_weight_t;
-typedef ap_fixed<16,6> dense_1_bias_t;
+typedef ap_fixed<18,8> dense_4_relu_table_t;
+typedef ap_fixed<36,16> dense_5_result_t;
+typedef ap_fixed<16,6> dense_5_weight_t;
+typedef ap_fixed<16,6> dense_5_bias_t;
 typedef ap_uint<1> layer4_index;
 typedef ap_fixed<16,6> layer5_t;
-typedef ap_fixed<18,8> dense_1_relu_table_t;
-typedef ap_fixed<35,15> dense_2_result_t;
-typedef ap_fixed<16,6> dense_2_weight_t;
-typedef ap_fixed<16,6> dense_2_bias_t;
+typedef ap_fixed<18,8> dense_5_relu_table_t;
+typedef ap_fixed<35,15> dense_6_result_t;
+typedef ap_fixed<16,6> dense_6_weight_t;
+typedef ap_fixed<16,6> dense_6_bias_t;
 typedef ap_uint<1> layer6_index;
 typedef ap_fixed<16,6> layer7_t;
-typedef ap_fixed<18,8> dense_2_relu_table_t;
+typedef ap_fixed<18,8> dense_6_relu_table_t;
 typedef ap_fixed<36,16> result_t;
-typedef ap_fixed<16,6> dense_3_weight_t;
-typedef ap_fixed<16,6> dense_3_bias_t;
+typedef ap_fixed<16,6> dense_7_weight_t;
+typedef ap_fixed<16,6> dense_7_bias_t;
 typedef ap_uint<1> layer8_index;
 
 // hls-fpga-machine-learning insert emulator-defines

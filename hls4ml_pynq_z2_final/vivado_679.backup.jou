@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jun  1 10:30:59 2026
+# Process ID: 679
+# Current directory: /home/moi/stage/notebooks/hls4ml_pynq_z2_final
+# Command line: vivado -mode batch -source vivado_synth.tcl
+# Log file: /home/moi/stage/notebooks/hls4ml_pynq_z2_final/vivado.log
+# Journal file: /home/moi/stage/notebooks/hls4ml_pynq_z2_final/vivado.jou
+#-----------------------------------------------------------
+source vivado_synth.tcl

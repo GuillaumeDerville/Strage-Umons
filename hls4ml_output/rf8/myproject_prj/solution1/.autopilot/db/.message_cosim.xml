@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[COSIM 212-47]" key="COSIM_TCL_47_1115" tag="" content="Using XSIM for RTL simulation."/>
+	<Message severity="INFO" prefix="[COSIM 212-14]" key="COSIM_TCL_14_1084" tag="" content="Instrumenting C test bench ..."/>
+	<Message severity="ERROR" prefix="[COSIM 212-24]" key="COSIM_TCL_24_1093" tag="" content="TB preprocess failed : In file included from /usr/include/features.h:392:0,
+                 from /tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h:495,
+                 from /tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/utility:68,
+                 from /tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/algorithm:60,
+                 from /home/moi/stage/notebooks/hls4ml_output/rf8/myproject_test.cpp:1:
+/usr/include/features-time64.h:20:27: fatal error: bits/wordsize.h: No such file or directory
+ #include &lt;bits/wordsize.h&gt;
+                           ^
+compilation terminated."/>
+	<Message severity="ERROR" prefix="[COSIM 212-5]" key="COSIM_TCL_5_1075" tag="" content="*** C/RTL co-simulation file generation failed. ***"/>
+</Messages>

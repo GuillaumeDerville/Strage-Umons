@@ -51,31 +51,31 @@ void collect_trace_output(struct trace_data *c_trace_outputs) {
 
 // Wrapper of top level function for Python bridge
 void myproject_float(
-    float *input_1,
+    float *input_2,
     float *layer8_out
 ) {
 
-    input_axi_t input_1_ap[N_IN];
-    nnet::convert_data<float, input_axi_t, 14>(input_1, input_1_ap);
+    input_axi_t input_2_ap[N_IN];
+    nnet::convert_data<float, input_axi_t, 14>(input_2, input_2_ap);
 
     output_axi_t layer8_out_ap[N_OUT];
 
-    myproject_axi(input_1_ap,layer8_out_ap);
+    myproject_axi(input_2_ap,layer8_out_ap);
 
     nnet::convert_data<output_axi_t, float, 14>(layer8_out_ap, layer8_out);
 }
 
 void myproject_double(
-    double *input_1,
+    double *input_2,
     double *layer8_out
 ) {
 
-    input_axi_t input_1_ap[N_IN];
-    nnet::convert_data<double, input_axi_t, 14>(input_1, input_1_ap);
+    input_axi_t input_2_ap[N_IN];
+    nnet::convert_data<double, input_axi_t, 14>(input_2, input_2_ap);
 
     output_axi_t layer8_out_ap[N_OUT];
 
-    myproject_axi(input_1_ap,layer8_out_ap);
+    myproject_axi(input_2_ap,layer8_out_ap);
 
     nnet::convert_data<output_axi_t, double, 14>(layer8_out_ap, layer8_out);
 }

@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../myproject_test.cpp in debug mode
+In file included from /usr/include/features.h:392:0,
+                 from /tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h:495,
+                 from /tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/utility:68,
+                 from /tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/algorithm:60,
+                 from ../../../../myproject_test.cpp:1:
+/usr/include/features-time64.h:20:27: fatal error: bits/wordsize.h: No such file or directory
+ #include <bits/wordsize.h>
+                           ^
+compilation terminated.
+make: *** [csim.mk:70: obj/myproject_test.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

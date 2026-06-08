@@ -1,7 +1,7 @@
 {
   "bits": 8,
   "int_bits": 2,
-  "threshold": 1.9112675786018372,
+  "threshold": 1.8252208828926086,
   "first_detection": 533,
   "false_alarms": 0,
   "anticipation_hours": 74.83333333333333

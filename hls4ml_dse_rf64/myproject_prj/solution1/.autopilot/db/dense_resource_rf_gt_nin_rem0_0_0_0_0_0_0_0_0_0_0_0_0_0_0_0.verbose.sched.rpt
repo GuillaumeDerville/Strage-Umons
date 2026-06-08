@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'dense_resource_rf_gt_nin_rem0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0'
 ================================================================
-* Date:           Wed May 20 11:16:32 2026
+* Date:           Mon Jun  1 10:26:52 2026
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        myproject_prj
@@ -308,9 +308,9 @@ The critical path consists of the following:
 
  <State 6>: 5.91ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('acc[7].V') with incoming values : ('acc[7].V', firmware/nnet_utils/nnet_dense_resource.h:145) [146]  (1.77 ns)
-	'phi' operation ('acc[7].V') with incoming values : ('acc[7].V', firmware/nnet_utils/nnet_dense_resource.h:145) [146]  (0 ns)
-	'phi' operation ('__Val2__') with incoming values : ('acc[7].V', firmware/nnet_utils/nnet_dense_resource.h:145) [48]  (0 ns)
+	multiplexor before 'phi' operation ('acc[12].V') with incoming values : ('acc[7].V', firmware/nnet_utils/nnet_dense_resource.h:145) [141]  (1.77 ns)
+	'phi' operation ('acc[12].V') with incoming values : ('acc[7].V', firmware/nnet_utils/nnet_dense_resource.h:145) [141]  (0 ns)
+	'phi' operation ('__Val2__') with incoming values : ('acc[7].V', firmware/nnet_utils/nnet_dense_resource.h:145) [53]  (0 ns)
 	'mux' operation ('phi_ln1265_1', firmware/nnet_utils/nnet_dense_resource.h:145) [124]  (2.06 ns)
 	'add' operation ('acc[7].V', firmware/nnet_utils/nnet_dense_resource.h:145) [125]  (2.08 ns)
 

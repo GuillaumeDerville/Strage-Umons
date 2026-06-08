@@ -1,0 +1,26 @@
+{
+  "sensor_name": "bearing2",
+  "source": "SIMULATION",
+  "n_windows": 29677,
+  "n_features": 14,
+  "feature_names": [
+    "mean",
+    "std",
+    "rms",
+    "max",
+    "min",
+    "peak_to_peak",
+    "skewness",
+    "kurtosis",
+    "crest_factor",
+    "shape_factor",
+    "impulse_factor",
+    "freq_dominant",
+    "spectral_energy",
+    "spectral_entropy"
+  ],
+  "window_size": 1024,
+  "window_step": 512,
+  "sampling_rate_hz": 10000,
+  "collected_at": "2026-06-01T13:59:43"
+}

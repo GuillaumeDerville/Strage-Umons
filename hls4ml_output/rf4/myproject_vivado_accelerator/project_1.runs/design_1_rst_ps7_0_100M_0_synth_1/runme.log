@@ -1,5 +1,0 @@
-
-*** Running vivado
-    with args -log design_1_rst_ps7_0_100M_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rst_ps7_0_100M_0.tcl
-
-/tools/Xilinx/Vivado/2020.1/bin/rdiArgs.sh: line 286:  3423 Killed                  "$RDI_PROG" "$@"

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri May 29 15:08:48 2026
+# Process ID: 1137
+# Current directory: /home/moi/stage/notebooks/hls4ml_output/rf8
+# Command line: vivado -mode batch -source design.tcl
+# Log file: /home/moi/stage/notebooks/hls4ml_output/rf8/vivado.log
+# Journal file: /home/moi/stage/notebooks/hls4ml_output/rf8/vivado.jou
+#-----------------------------------------------------------
+source design.tcl

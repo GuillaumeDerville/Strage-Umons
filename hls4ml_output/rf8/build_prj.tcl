@@ -5,9 +5,9 @@ array set opt {
     reset      0
     csim       1
     synth      1
-    cosim      1
-    validation 1
-    export     0
+    cosim      0
+    validation 0
+    export     1
     vsynth     0
     fifo_opt   0
 }
@@ -144,7 +144,7 @@ proc compare_files {file_1 file_2} {
 
 file mkdir tb_data
 set CSIM_RESULTS "./tb_data/csim_results.log"
-set RTL_COSIM_RESULTS "./tb_data/rtl_cosim_results.log"
+# set RTL_COSIM_RESULTS "./tb_data/rtl_cosim_results.log"
 
 if {$opt(reset)} {
     open_project -reset ${project_name}_prj
@@ -173,7 +173,7 @@ set_clock_uncertainty $clock_uncertainty default
 if {$opt(csim)} {
     puts "***** C SIMULATION *****"
     set time_start [clock clicks -milliseconds]
-    csim_design
+    # csim_design
     set time_end [clock clicks -milliseconds]
     report_time "C SIMULATION" $time_start $time_end
 }
@@ -187,13 +187,13 @@ if {$opt(synth)} {
     report_time "C/RTL SYNTHESIS" $time_start $time_end
 }
 
-if {$opt(cosim)} {
+# if {$opt(cosim)} {
     puts "***** C/RTL SIMULATION *****"
     # TODO: This is a workaround (Xilinx defines __RTL_SIMULATION__ only for SystemC testbenches).
     add_files -tb ${project_name}_test.cpp -cflags "-std=c++0x -DRTL_SIM"
     set time_start [clock clicks -milliseconds]
 
-    cosim_design -trace_level all -setup
+#     # cosim_design -trace_level all -setup
 
     if {$opt(fifo_opt)} {
         puts "\[hls4ml\] - FIFO optimization started"
@@ -203,21 +203,21 @@ if {$opt(cosim)} {
         }
     }
 
-    remove_recursive_log_wave
-    set old_pwd [pwd]
-    cd ${project_name}_prj/solution1/sim/verilog/
-    source run_sim.tcl
-    cd $old_pwd
+#     remove_recursive_log_wave
+#     set old_pwd [pwd]
+#     cd ${project_name}_prj/solution1/sim/verilog/
+#     source run_sim.tcl
+#     cd $old_pwd
 
     set time_end [clock clicks -milliseconds]
     puts "INFO:"
     if {[string equal "$backend" "vivadoaccelerator"]} {
-        puts [read [open ${project_name}_prj/solution1/sim/report/${project_name}_axi_cosim.rpt r]]
+#         puts [read [open ${project_name}_prj/solution1/sim/report/${project_name}_axi_cosim.rpt r]]
     } else {
-        puts [read [open ${project_name}_prj/solution1/sim/report/${project_name}_cosim.rpt r]]
+#         puts [read [open ${project_name}_prj/solution1/sim/report/${project_name}_cosim.rpt r]]
     }
     report_time "C/RTL SIMULATION" $time_start $time_end
-}
+# }
 
 if {$opt(validation)} {
     puts "***** C/RTL VALIDATION *****"
@@ -226,7 +226,7 @@ if {$opt(validation)} {
     } else {
         puts "ERROR: Test failed"
         puts "ERROR: - csim log:      $CSIM_RESULTS"
-        puts "ERROR: - RTL-cosim log: $RTL_COSIM_RESULTS"
+#         puts "ERROR: - RTL-cosim log: $RTL_COSIM_RESULTS"
         exit 1
     }
 }

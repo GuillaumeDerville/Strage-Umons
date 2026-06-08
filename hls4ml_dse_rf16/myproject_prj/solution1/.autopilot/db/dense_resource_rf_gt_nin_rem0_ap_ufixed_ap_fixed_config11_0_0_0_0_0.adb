@@ -744,7 +744,7 @@
           </oprand_edges>
           <opcode>phi</opcode>
           <m_Display>0</m_Display>
-          <m_isOnCriticalPath>1</m_isOnCriticalPath>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
@@ -797,7 +797,7 @@
           </oprand_edges>
           <opcode>phi</opcode>
           <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isOnCriticalPath>1</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
@@ -2181,7 +2181,7 @@
           </oprand_edges>
           <opcode>phi</opcode>
           <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isOnCriticalPath>1</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
@@ -2222,7 +2222,7 @@
           </oprand_edges>
           <opcode>phi</opcode>
           <m_Display>0</m_Display>
-          <m_isOnCriticalPath>1</m_isOnCriticalPath>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
